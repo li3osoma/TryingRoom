@@ -43,17 +43,6 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-//    class MyHandler: Handler() {
-//        override fun handleMessage(msg: Message) {
-//            super.handleMessage(msg)
-//            var bundle=msg.data
-//
-//            binding.titleText.text=bundle.getString("title")
-//            binding.bodyText.text=bundle.getString("text")
-//
-//        }
-//    }
-
     private fun updateUi(){
         var title=""
         var text=""
@@ -72,19 +61,6 @@ class MainActivity : AppCompatActivity() {
                 binding.bodyEditText.text.clear()
             }
         }
-
-//        Thread(
-//            Runnable {
-//                run(){
-//                    var bundle=Bundle()
-//                    for(notion in notionDao.getNotionsList()){
-//                        title+=notion.title+"\n"
-//                        text+=notion.body+"\n"
-//                    }
-//
-//                }
-//            }
-//        ).start()
     }
 
 
